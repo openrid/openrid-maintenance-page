@@ -8,6 +8,23 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat&display=swap' rel='stylesheet'>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <style>
+        .or-gradient-bar {
+            height: 12px;
+            width: 100%;
+            background: #a48eca;
+            background-image: linear-gradient(to right, #0793b2, #3094be, #4e94c6, #6a93cb, #8491cd, #a28ec7, #ba8bbc, #cb8baf, #d68f9a, #d5988a, #cba484, #bcaf88);
+        }
+
+        .top {
+            position: fixed;
+            top: 0;
+        }
+
+        .bottom {
+            position: fixed;
+            bottom: 0;
+        }
+
         body {
             font-family: Montserrat, Arial, sans-serif;
             padding: 0;
@@ -16,7 +33,7 @@
             font-weight: 200;
         }
 
-        #top {
+        #header {
             width: 100%;
             text-align: center;
             position: absolute;
@@ -39,13 +56,14 @@
             text-align: center;
             position: absolute;
             top: 95%;
-            font-size: 13px;
+            font-size: 14px;
         }
     </style>
 
 </head>
 <body>
-    <div id="top">
+    <div class="or-gradient-bar top"></div>
+    <div id="header">
         <a href="https://openrid.co/"><img src="openrid-logo.png"></a>
     </div>
     <div id="center">
@@ -58,5 +76,6 @@
         &nbsp;|&nbsp;<a href="https://www.linkedin.com/company/openrid/">LinkedIn</a>
         &nbsp;|&nbsp;<a href="https://www.reddit.com/r/openrid/">Reddit</a>
     </div>
+    <div class="or-gradient-bar bottom"></div>
 </body>
 </html>
